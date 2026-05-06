@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Farmer Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/register.css">
     <script>
         function toggleForm() {
             const formBox = document.getElementById('simulation-form-box');

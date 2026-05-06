@@ -1,0 +1,244 @@
+/* =====================
+   LAYOUT & TOPBAR
+   ===================== */
+
+body {
+  background: #f5f4f1;
+  padding: 1.5rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.topbar h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: -0.01em;
+}
+
+.topbar p {
+  font-size: 13px;
+  color: #5f5e5a;
+  margin-top: 2px;
+}
+
+/* =====================
+   METRIC CARDS
+   ===================== */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.metric {
+  background: #ffffff;
+  border: 1px solid #e2e0d8;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.metric-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #b4b2a9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.metric-sub {
+  font-size: 11px;
+  color: #888780;
+  margin-top: 2px;
+}
+
+/* =====================
+   CARDS
+   ===================== */
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e0d8;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1.25rem;
+  border-bottom: 1px solid #e2e0d8;
+}
+
+.card-header h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+/* =====================
+   TOGGLE BOX (form)
+   ===================== */
+
+.toggle-box.closed {
+  display: none;
+}
+
+.toggle-box.open {
+  display: block;
+}
+
+/* =====================
+   FORM GRID (inside card)
+   ===================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 14px;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   BUTTONS
+   ===================== */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #d3d1c7;
+  background: #ffffff;
+  color: #1a1a1a;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.button:hover {
+  background: #f5f4f1;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button.secondary {
+  border-color: #e2e0d8;
+  color: #5f5e5a;
+  background: transparent;
+}
+
+.button.secondary:hover {
+  background: #f5f4f1;
+}
+
+.button.danger {
+  color: #a32d2d;
+  border-color: #f7c1c1;
+  background: transparent;
+}
+
+.button.danger:hover {
+  background: #fcebeb;
+}
+
+.button.spaced {
+  margin-top: 1rem;
+}
+
+/* =====================
+   TABLE
+   ===================== */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+}
+
+thead tr {
+  border-bottom: 1px solid #e2e0d8;
+}
+
+th {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  color: #b4b2a9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+td {
+  padding: 0.7rem 1rem;
+  color: #1a1a1a;
+  border-bottom: 1px solid #f0ede6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #fafaf8;
+}
+
+td.actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* =====================
+   ALERTS
+   ===================== */
+
+.success {
+  font-size: 13px;
+  color: #0f6e56;
+  background: #e1f5ee;
+  border: 1px solid #9fe1cb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 1rem;
+}
+
+.no-space {
+  margin: 0;
+}
